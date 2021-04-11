@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    thead,
+    td,
+    tr,
+    th,
+    tbody,
+    table {
+        border: 1px solid grey;
+    }
+
+    td,
+    th {
+        padding: 5px 10px;
+    }
+</style>
+
+<body>
+    <form>
+        <div class="Barang">
+            <table>
+                <thead>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th colspan="2">Actions</th>
+                </thead>
+                <tbody id="renderTable"></tbody>
+
+            <tr>
+                <th></th>
+                <th><input type="text" id="inputBarang" placeholder="masukan nama barang"></th>
+                <th><input type="number" id="inputPrice" placeholder="masukan harga barang"></th>
+                <th><select name="category" id="inputCategory">
+                    <option value="food">food</option>
+                    <option value="drink">drink</option>
+                    <option value="others">others</option>
+                </select></th>
+                <th><button onclick="addBarang(event)">ADD</button></th>
+            </tr>
+        </table>
+    </form>
+    <script src="./Soal 2.js"></script>
+</body>
+
+</html>
